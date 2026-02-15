@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --font-sans: "Sora", "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --background: #0b141b;
+  --surface: #111b24;
+  --surface-strong: #16212b;
+  --border: #22303b;
+  --primary: #1183d4;
+  --grid: #1183d4;
+  --solar: #10b981;
+  --genset: #f59e0b;
+  --text-primary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --success: #22c55e;
+  color-scheme: dark;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--background);
+}
+
+.radix-themes {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+}
+
+code,
+pre,
+kbd {
+  font-family: var(--font-mono);
+}
+
+#root {
+  min-height: 100vh;
+}
